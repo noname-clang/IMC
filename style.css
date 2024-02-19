@@ -1,67 +1,54 @@
-body {
-    background-color: #1a1a1a;
-    display: flex;
+body
+{
+    background-color: black;
+    display:  flex ;
     align-items: center;
     justify-content: center;
     width: 90%;
     padding-left: 100px;
-    height: 80vh;
-    margin: 0;
-    animation: backgroundAnimation 10s infinite alternate; /* Background animation */
+    height:  80vh;
 }
-
-@keyframes backgroundAnimation {
-    0% {
-        background-color: #1a1a1a;
-    }
-    50% {
-        background-color: #000;
-    }
-    100% {
-        background-color: #1a1a1a;
-    }
-}
-
-.classdiv {
-    border: 2px solid #fff;
-    border-radius: 15px;
-    background-color: #ff5e5e;
+.classdiv
+{   border: 10px;
+    border-color: white;
+    background-color: aqua;
     width: 300px;
-    height: 300px;
+    height:  300px;
+    border-radius: 15px;
     position: static;
-    transition: transform 0.3s ease;
-}
 
-.classdiv:hover {
-    transform: scale(1.05);
 }
-
-h3, h1 {
+h3
+{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #ffacac;
-    margin: 0;
-    animation: textGlow 2s infinite alternate; /* Text glow animation */
+    font-size: medium;
+    padding-left: 127px;
 }
-
-@keyframes textGlow {
-    0% {
-        text-shadow: 0 0 5px #ffacac;
-    }
-    100% {
-        text-shadow: 0 0 10px #ff5e5e, 0 0 20px #ff5e5e; /* Adjust glow effect */
-    }
-}
-
-.input-box label {
+h1
+{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: medium;
+    padding-left: 47px;
+}
+
+.input-box label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
     margin-top: 10px;
-    color: #000;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: black;
 }
-
-.input-box {
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+.input-box
+{   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,73 +56,29 @@ h3, h1 {
     gap: 1rem;
 }
 
-.input-box input {
-    border: 2px solid #ff5e5e;
-    border-radius: 8px;
-    padding: 0.5rem;
-    transition: border-color 0.3s ease;
+.input-box input{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+
 }
 
-.input-box input:focus {
-    border-color: #ffacac;
-}
-
-.btn-box {
+.btn-box{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 25px;
 }
 
-button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-    padding: 0.6rem;
-    background: #4CAF50;
-    color: #fff;
+button
+{   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    padding: .6rem;
+    background: green;
+    color: white;
     width: 150px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative;
-    overflow: hidden;
-}
 
-button:hover {
-    background: #45a049;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-.button-text {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-button:hover .button-text {
-    transform: translateY(-2px);
-}
-
-.shimmer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
-    background-size: 50px 50px;
-    animation: shimmerAnimation 2s infinite linear; /* Shimmer animation */
-}
-
-@keyframes shimmerAnimation {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 50px 50px;
-    }
 }
